@@ -16,21 +16,14 @@
         <a href="#" class="logo">Portfolio.</a>
         <ul>
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="bars-animation">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5;"></div>
-        <div class="bar" style="--i:4;"></div>
-        <div class="bar" style="--i:3;"></div>
-        <div class="bar" style="--i:2;"></div>
-        <div class="bar" style="--i:1;"></div>
-    </div>
-
+    
+<!-- Seção da home -->
     <section class="home">
         <div class="home-info">
             <h1>Miguel Barbosa</h1>
@@ -41,10 +34,12 @@
             <p> Hi, I'm 22 years old, portuguese and a software engineering student, always ready to learn something new.
 
                 <div class="btn-sci">
-                    <a href="#" class="btn">Download CV</a>
+                    <a href="CV_8200102.pdf" class="btn" download target="_blank" rel="noopener noreferrer">Download CV</a>
                     <div class="sci">
-                        <a href="#"><i class='bx bxl-github'></i></a>
-                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/MiguelBarbosa04" target="_blank" rel="noopener noreferrer">
+                            <i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/miguel-barbosa-b77268209/" target="_blank" rel="noopener noreferrer">
+                            <i class='bx bxl-linkedin' ></i></a>
                     </div>
                 </div>
         </div>
@@ -57,6 +52,76 @@
     </div>
 </div>
     </section>
+
+<!-- Seção do about -->
+<section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm Miguel Barbosa, a ESTG P.Porto software engineering student from Portugal, passionate about technology, problem-solving, and learning new skills.</p>
+          <p>My interests include web and software development. I enjoy working on challenging projects that push my knowledge and creativity.</p>
+          <p>Outside of programming, I like gaming, going to the gym and exploring new tools that improve productivity and user experience.</p>
+        </div>
+        <div class="about-img"> 
+            <div class="img-box">
+              <a href="https://www.estg.ipp.pt/" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/logo-ipp.png" alt="Miguel Barbosa">
+              </a>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+  
+
+
+
+      <!-- Seção da portfolio -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+        <h2>My Portfolio</h2>
+      </div>
+      </section>
+
+
+
+<!-- Seção da contact -->
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+      </section>
+
+
+
+      
+<!-- Script para mudar a cor da seção da navbar-->
+      <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".navbar ul li");
+    
+        window.addEventListener("scroll", () => {
+            let current = "";
+    
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute("id");
+                }
+            });
+    
+            navLinks.forEach(li => {
+                li.classList.remove("active");
+                const anchor = li.querySelector("a");
+                if (anchor.getAttribute("href").slice(1) === current) {
+                    li.classList.add("active");
+                }
+            });
+        });
+    </script>
+    
     </body>
 </html>
 
