@@ -328,6 +328,11 @@ animation-delay: -5s;
 .contact {
     padding: 80px 20px;
     background-color: #1f242d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
   }
 
   .contact .container {
@@ -342,6 +347,79 @@ animation-delay: -5s;
     color: #fff;
  
 }
+
+.contact form {
+    width: 600px;
+    text-align: center;
+ 
+}
+
+
+/*Formulário do Contacto*/
+
+form .input-box{
+    display: flex;
+    justify-content: space-between ;
+}
+
+.input-box .input-field{
+    width: 48.5%;
+    
+}
+
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #3d8616;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin:12px 0;
+
+}
+
+.field .item::placeholder{
+    color: rgba(255, 255, 255, .3)
+    
+}
+
+.field .error-txt{
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin:-5px 0 10px;
+    display: none;
+}
+
+form .textarea-field .item{
+    resize:none;
+}
+
+form .textarea-field .error-txt{
+   margin-top: -10px;
+}
+
+form button{
+    padding: 10px 30px;
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    outline: none;
+    border-radius: 40px;
+    box-shadow:0 0 10px #7cf03d;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .5s;
+}
+
+form button:hover{
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}
   
   
-  
+
+
+
