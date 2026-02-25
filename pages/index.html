@@ -1,62 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
     <head>
-        <meta charset = "UTF-8">
-        <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Portfolio
-            
-        </title>
+        <title>Miguel Barbosa - Portfolio</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
-    <body>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Portfolio.</a>
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <body class="bg-gray-900 text-white scroll-smooth">
+        <!-- NAVBAR -->
+        <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-md z-50 border-b border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Portfolio.</a>
+                    <ul class="hidden md:flex gap-8">
+                        <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-cyan-400 transition">About Me</a></li>
+                        <li><a href="#portfolio" class="hover:text-cyan-400 transition">My Projects</a></li>
+                        <li><a href="#contact" class="hover:text-cyan-400 transition">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <div class="bars-animation">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5;"></div>
-        <div class="bar" style="--i:4;"></div>
-        <div class="bar" style="--i:3;"></div>
-        <div class="bar" style="--i:2;"></div>
-        <div class="bar" style="--i:1;"></div>
-    </div>
+        <!-- HOME SECTION -->
+        <section id="home" class="min-h-screen pt-20 flex items-center justify-center overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Left Content -->
+                    <div>
+                        <h1 class="text-5xl md:text-6xl font-bold mb-4">Miguel Barbosa</h1>
+                        <h2 class="text-3xl md:text-4xl mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent pb-1" >
+                            Software Engineer
+                        </h2>
+                        <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                            Hi, I'm 23 years old, Portuguese, and I have just completed my degree in Software Engineering. I am always eager to learn new things and ready to start my professional career.
+                        </p>
 
-    <section class="home">
-        <div class="home-info">
-            <h1>Miguel Barbosa</h1>
-            <h2>
-<span style="--i:1;" data-text="Software engineering student">Software engineer</span>
-            </h2>
+                        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                            <a href="../assets/cv/Miguel_Barbosa_cv.pdf" download class="bg-gradient-to-r from-cyan-400 to-blue-500 px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition transform hover:scale-105">
+                                Download CV
+                            </a>
+                            <div class="flex gap-4">
+                                <a href="https://github.com/MiguelBarbosa04" target="_blank" class="text-2xl hover:text-cyan-400 transition transform hover:scale-110">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/miguel-barbosa-b77268209/" target="_blank" class="text-2xl hover:text-cyan-400 transition transform hover:scale-110">
+                                    <i class='bx bxl-linkedin'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-            <p> Hi, I’m 23 years old, Portuguese, and I have just completed my degree in Software Engineering. I am always eager to learn new things and ready to start my professional career.
-
-                <div class="btn-sci">
-                    <a href="../assets/cv/Miguel_Barbosa_cv.pdf" class="btn" download>Download CV</a>
-                    <div class="sci">
-                        <a href="https://github.com/MiguelBarbosa04" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://www.linkedin.com/in/miguel-barbosa-b77268209/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <!-- Right Image -->
+                    <div class="flex justify-center">
+                        <div class="relative w-64 h-64 md:w-80 md:h-80">
+                            <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-20 blur-2xl"></div>
+                            <img src="../assets/images/pic.jpg" alt="Profile Image" class="relative w-full h-full rounded-full object-cover border-4 border-cyan-400/30 hover:border-cyan-400 transition">
+                        </div>
                     </div>
                 </div>
-        </div>
+            </div>
+        </section>
 
-        <div class="home-img"> 
-        <div class="img-box">
-            <div class="img-item">
-                <img src="../assets/images/pic.jpg" alt="Profile Image">
-        </div>
-    </div>
-</div>
-    </section>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-20 bg-gray-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">About Me</h1>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Coming soon...</p>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-8 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent pb-3">My Projects</h1>
+                <p class="text-gray-400 text-lg text-center max-w-2xl mx-auto">Coming soon...</p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 bg-gray-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Get In Touch</h1>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Coming soon...</p>
+            </div>
+        </section>
     </body>
 </html>
 
