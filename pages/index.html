@@ -1,93 +1,310 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Miguel Barbosa - Portfolio</title>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Miguel Barbosa - Software Engineer Portfolio. Recent graduate eager to start professional career in software development.">
+    <meta name="keywords" content="Miguel Barbosa, Software Engineer, Portfolio, Web Developer">
+    <meta name="author" content="Miguel Barbosa">
+    <title>Miguel Barbosa - Software Engineer Portfolio</title>
+    
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
 
-    <body class="bg-gray-900 text-white scroll-smooth">
-        <!-- NAVBAR -->
-        <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-md z-50 border-b border-gray-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-16">
-                    <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Portfolio.</a>
-                    <ul class="hidden md:flex gap-8">
-                        <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
-                        <li><a href="#about" class="hover:text-cyan-400 transition">About Me</a></li>
-                        <li><a href="#portfolio" class="hover:text-cyan-400 transition">My Projects</a></li>
-                        <li><a href="#contact" class="hover:text-cyan-400 transition">Contacts</a></li>
-                    </ul>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Portfolio.</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HOME SECTION ========== -->
+    <section id="home">
+        <div class="home-container">
+            <div class="home-content">
+                <h1>Miguel Barbosa</h1>
+                <h2>Software Engineer</h2>
+                <p>
+                    Hi, I'm 23 years old, Portuguese, and I have just completed my degree in Software Engineering. 
+                    I am always eager to learn new things and ready to start my professional career with passion and dedication.
+                </p>
+                <div class="home-buttons">
+                    <a href="../assets/cv/Miguel_Barbosa_cv.pdf" download class="btn btn-primary">
+                        <i class='bx bx-download'></i> Download CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/MiguelBarbosa04" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/miguel-barbosa-b77268209/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
                 </div>
             </div>
-        </nav>
+            <div class="home-image">
+                <div class="image-wrapper">
+                    <img src="../assets/images/pic.jpg" alt="Miguel Barbosa - Software Engineer">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- HOME SECTION -->
-        <section id="home" class="min-h-screen pt-20 flex items-center justify-center overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <!-- Left Content -->
-                    <div>
-                        <h1 class="text-5xl md:text-6xl font-bold mb-4">Miguel Barbosa</h1>
-                        <h2 class="text-3xl md:text-4xl mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent pb-1" >
-                            Software Engineer
-                        </h2>
-                        <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                            Hi, I'm 23 years old, Portuguese, and I have just completed my degree in Software Engineering. I am always eager to learn new things and ready to start my professional career.
-                        </p>
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about">
+        <div class="about-container">
+            <h2 class="section-title reveal">About Me</h2>
+            <p class="section-subtitle reveal">Get to know more about my background and skills</p>
+            
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <h3>Who I Am</h3>
+                    <p>
+                        I'm a passionate Software Engineer who recently graduated with a strong foundation in software development 
+                        and a hunger to learn. Throughout my academic journey, I've developed a solid understanding of programming 
+                        principles, problem-solving, and teamwork.
+                    </p>
+                    <p>
+                        I'm excited to apply my knowledge in real-world scenarios and contribute to innovative projects. 
+                        My goal is to continuously improve my skills while delivering high-quality solutions that make a difference.
+                    </p>
+                    <p>
+                        I'm particularly interested in web development, software architecture, and emerging technologies. 
+                        I believe in writing clean, maintainable code and following best practices.
+                    </p>
+                </div>
+                
+                <div class="skills-section reveal">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class='bx bxl-javascript'></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-python'></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-java'></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-html5'></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-css3'></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-react'></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-nodejs'></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-git'></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bx-data'></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-docker'></i>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-                            <a href="../assets/cv/Miguel_Barbosa_cv.pdf" download class="bg-gradient-to-r from-cyan-400 to-blue-500 px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition transform hover:scale-105">
-                                Download CV
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2 class="section-title reveal">My Projects</h2>
+            <p class="section-subtitle reveal">Check out some of my recent work and academic projects</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class='bx bx-code-alt'></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern, responsive portfolio website built with HTML, CSS, and JavaScript to showcase my work and skills.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MiguelBarbosa04" target="_blank">
+                                <i class='bx bxl-github'></i> Code
                             </a>
-                            <div class="flex gap-4">
-                                <a href="https://github.com/MiguelBarbosa04" target="_blank" class="text-2xl hover:text-cyan-400 transition transform hover:scale-110">
-                                    <i class='bx bxl-github'></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/miguel-barbosa-b77268209/" target="_blank" class="text-2xl hover:text-cyan-400 transition transform hover:scale-110">
-                                    <i class='bx bxl-linkedin'></i>
-                                </a>
-                            </div>
+                            <a href="#" target="_blank">
+                                <i class='bx bx-link-external'></i> Live Demo
+                            </a>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Right Image -->
-                    <div class="flex justify-center">
-                        <div class="relative w-64 h-64 md:w-80 md:h-80">
-                            <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-20 blur-2xl"></div>
-                            <img src="../assets/images/pic.jpg" alt="Profile Image" class="relative w-full h-full rounded-full object-cover border-4 border-cyan-400/30 hover:border-cyan-400 transition">
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class='bx bx-data'></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Database Management System</h3>
+                        <p>Academic project involving database design, implementation, and optimization with SQL and Python.</p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Database</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MiguelBarbosa04" target="_blank">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class='bx bx-mobile'></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Coming Soon</h3>
+                        <p>More exciting projects are in development. Stay tuned for updates on my latest work!</p>
+                        <div class="project-tags">
+                            <span class="tag">In Progress</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MiguelBarbosa04" target="_blank">
+                                <i class='bx bxl-github'></i> GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- ABOUT SECTION -->
-        <section id="about" class="py-20 bg-gray-800/50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">About Me</h1>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Coming soon...</p>
-            </div>
-        </section>
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="section-subtitle reveal">Feel free to reach out for opportunities or just to say hello!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:miguelbarbosa@example.com">miguelbarbosa@example.com</a>
+                        </div>
+                    </div>
 
-        <!-- PORTFOLIO SECTION -->
-        <section id="portfolio" class="py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 class="text-4xl md:text-5xl font-bold mb-8 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent pb-3">My Projects</h1>
-                <p class="text-gray-400 text-lg text-center max-w-2xl mx-auto">Coming soon...</p>
-            </div>
-        </section>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/miguel-barbosa-b77268209/" target="_blank" rel="noopener noreferrer">Miguel Barbosa</a>
+                        </div>
+                    </div>
 
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="py-20 bg-gray-800/50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Get In Touch</h1>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Coming soon...</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class='bx bxl-github'></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/MiguelBarbosa04" target="_blank" rel="noopener noreferrer">@MiguelBarbosa04</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class='bx bx-map'></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Portugal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class='bx bx-send'></i> Send Message
+                    </button>
+                </form>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/MiguelBarbosa04" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/miguel-barbosa-b77268209/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                &copy; <span class="copyright-year">2026</span> Miguel Barbosa. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
 </html>
 
