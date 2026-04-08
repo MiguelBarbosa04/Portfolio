@@ -92,31 +92,9 @@ function revealOnScroll() {
 }
 
 window.addEventListener('scroll', revealOnScroll);
-// Inicializar na carga
 revealOnScroll();
 
-// ========== FORM SUBMIT ==========
-const contactForm = document.getElementById('contact-form');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Obter valores
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        // Aqui podes adicionar lógica para enviar o email
-        // Por agora, apenas mostra uma mensagem
-        alert(`Obrigado ${name}! Entraremos em contacto em breve para o email: ${email}`);
-        
-        // Limpar formulário
-        contactForm.reset();
-    });
-}
-
-// ========== TYPING EFFECT (Optional) ==========
 const typingText = document.querySelector('.typing-text');
 
 if (typingText) {
@@ -135,7 +113,6 @@ if (typingText) {
     setTimeout(type, 1000);
 }
 
-// ========== COPYRIGHT YEAR ==========
 const copyrightYear = document.querySelector('.copyright-year');
 if (copyrightYear) {
     copyrightYear.textContent = new Date().getFullYear();
